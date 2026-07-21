@@ -1,0 +1,17 @@
+{
+  "train_runtime": 1254.32,
+  "train_samples_per_second": 35.4,
+  "train_steps_per_second": 4.4,
+  "total_flos": 123984839281920.0,
+  "train_loss": 0.1243,
+  "epoch": 8.0,
+  "best_metric": 0.1101,
+  "best_model_checkpoint": "C:/games/t5/reals/model_checkpoints/checkpoint-4500",
+  "eval_loss": 0.1101,
+  "eval_exact_match": 0.942,
+  "eval_execution_accuracy": 0.965,
+  "eval_bleu": 95.8,
+  "eval_rougeL": 96.2,
+  "early_stopping_triggered": true,
+  "early_stopping_patience": 2
+}

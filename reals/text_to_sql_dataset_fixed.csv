@@ -1,0 +1,16 @@
+question,query
+How many students are there?,SELECT COUNT(*) FROM students_master;
+Who is John Doe?,SELECT * FROM students_master WHERE name = 'John Doe';
+List all subjects.,SELECT subject_name FROM subjects_master;
+How many attendances exist?,SELECT COUNT(*) FROM consolidated_attendance_records;
+Show attendance for John Doe in Math.,SELECT status FROM consolidated_attendance_records WHERE student_id = 1 AND subject_id = 1;
+What is the ID of Physics?,SELECT subject_id FROM subjects_master WHERE subject_name = 'Physics';
+List all transaction logs.,SELECT * FROM transaction_logs;
+How many logs are there?,SELECT COUNT(*) FROM transaction_logs;
+When did John enroll?,SELECT enrollment_date FROM students_master WHERE name = 'John Doe';
+Who enrolled after Sep 1?,SELECT name FROM students_master WHERE enrollment_date > '2023-09-01';
+List absent records.,SELECT * FROM consolidated_attendance_records WHERE status = 'Absent';
+Count present records.,SELECT COUNT(*) FROM consolidated_attendance_records WHERE status = 'Present';
+Who is student ID 2?,SELECT name FROM students_master WHERE student_id = 2;
+Get logs on Oct 1.,SELECT * FROM transaction_logs WHERE log_date::date = '2023-10-01';
+List all students ordered by name.,SELECT * FROM students_master ORDER BY name;
